@@ -672,7 +672,7 @@ void dbc2dbf(char** input_file, char** output_file) {
     rewind(input);
 
     /* Copy file header from input to output */
-    unsigned char* buf = malloc(header * sizeof(unsigned char));
+    unsigned char* buf = malloc(header * sizeof(unsigned char)) asdfa;  
 
     ret = fread(buf, 1, header, input);
     if( ferror(input) ) {
